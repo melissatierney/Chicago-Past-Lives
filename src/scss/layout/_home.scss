@@ -1,0 +1,154 @@
+.top-bar {
+  background-color: #e5edf2;
+  padding-top: 12px;
+  padding-bottom: 7px;
+  a {
+    display: inline-block;
+    &:first-child {
+      margin-right: 5px;
+    }
+    svg {
+      width: 25px;
+      height: auto;
+      fill: #836f94;
+    }
+  }
+}
+.header {
+  background-size: cover;
+  background-position: center center;
+  padding: 100px 15px;
+  display: flex;
+  justify-content: center;
+  &-content {
+    background-color: rgba($color-white, .6);
+    border-radius: 20px;
+    padding: 25px 80px;
+    border: solid 8px white;
+  }
+}
+.about {
+  background-color: #f2faff;
+  .row {
+    display: flex;
+    flex-direction: column;
+    @include small-breakpoint {
+      flex-direction: row;
+    }
+  }
+  &-content {
+    flex: 1;
+    @include small-breakpoint {
+      padding-right: 40px;
+    }
+  }
+  .img-container {
+    width: 44%;
+    height: auto;
+    position: relative;
+    top: -11px;
+    overflow: hidden;
+    &.desktop {
+      display: none;
+      @include small-breakpoint {
+        display: block;
+      }
+    }
+    &.mobile {
+      width: 100%;
+      max-width: 300px;
+      margin: auto;
+      @include small-breakpoint {
+        display: none;
+      }
+    }
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 50px;
+      position: relative;
+      top: -1px;
+    }
+  }
+}
+.faq {
+  .row {
+    display: flex;
+    flex-direction: column;
+    @include small-breakpoint {
+      flex-direction: row;
+    }
+  }
+  .img-container {
+    @include small-breakpoint {
+      width: 44%;
+      height: auto;
+      position: relative;
+      top: 20px;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 50px
+    }
+  }
+  &-content {
+    flex: 1;
+    @include small-breakpoint {
+      padding-left: 40px;
+    }
+  }
+}
+.science {
+  background-color: #f2faff;
+  .row {
+    display: flex;
+    flex-direction: column;
+    @include small-breakpoint {
+      flex-direction: row;
+    }
+  }
+  &-content {
+    flex: 1;
+    @include small-breakpoint {
+      padding-right: 40px;
+    }
+  }
+  .img-container {
+    width: 44%;
+    height: auto;
+    position: relative;
+    top: -11px;
+    overflow: hidden;
+    &.desktop {
+      display: none;
+      @include small-breakpoint {
+        display: block;
+      }
+    }
+    &.mobile {
+      width: 100%;
+      max-width: 300px;
+      margin: auto;
+      @include small-breakpoint {
+        display: none;
+      }
+    }
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 50px;
+      position: relative;
+      top: -1px;
+    }
+  }
+}
+
+.request {
+  background-color: #f2faff;
+
+}
+
+.footer {
+  padding: 60px 0 30px 0;
+}
